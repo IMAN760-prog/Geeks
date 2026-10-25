@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moroccan Food Catalogue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Moroccan Food Catalogue</h1>
+        <p><em><b>Everything related to the most delicious Moroccan dishes</b></em></p>
+
+        <input
+            type="search"
+            id="search-input"
+            placeholder="Search Moroccan dishes..."
+        >
+    </header>
+
+    <main>
+        <section>
+            <h2>Discover Moroccan Dishes</h2>
+            <p><b><em>Explore our traditional Moroccan food collection.</em></b></p>
+        </section>
+
+        <section class="controls">
+            <h2>Categories</h2>
+
+            <select id="category-filter">
+                <option value="all">All Dishes</option>
+                <option value="main">Main Dishes</option>
+                <option value="desserts">Desserts</option>
+                <option value="soups">Soups</option>
+            </select>
+            <label for="sort-select">Sort by:</label>
+
+          <select id="sort-select">
+             <option value="default">Default</option>
+             <option value="az">Name: A to Z</option>
+              <option value="za">Name: Z to A</option>
+          </select>
+          </section>
+
+        <section>
+            <h2>Our Moroccan Dishes</h2>
+
+            <div id="cards-grid"></div>
+
+            <p id="empty-state" hidden>
+                No dishes found. Try another search!
+            </p>
+        </section>
+    </main>
+    <dialog id="dish-dialog">
+    <button id="close-dialog" type="button">Close ✖</button>
+    <div id="dialog-content"></div>
+    </dialog>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
+

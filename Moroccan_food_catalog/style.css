@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #333333;
+    margin: 0;
+}
+header {
+    background-color: #8b2e1d;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+}
+#search-input {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+#cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#cards-grid article {
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#cards-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#cards-grid h3 {
+    color: #8b2e1d;
+    margin-top: 12px;
+}
+    #cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 25px;
+}
+
+#cards-grid article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#cards-grid p {
+    line-height: 1.6;
+}
+#dish-dialog {
+    width: 80%;
+    max-width: 500px;
+    border: none;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+}
+
+#dish-dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#dialog-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#close-dialog {
+    background-color: #8b2e1d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#close-dialog:hover {
+    background-color: #642013;
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main section {
+    margin-bottom: 30px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+select,
+button {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+
+.details-button {
+    background-color: #8b2e1d;
+    color: white;
+    border: none;
+}
+
+.details-button:hover {
+    background-color: #642013;
+}
+@media (max-width: 600px) {
+    #cards-grid {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #dish-dialog {
+        width: 85%;
+        padding: 15px;
+    }
+}
