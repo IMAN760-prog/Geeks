@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, sans-serif;
+}
+h1{
+    text-align: center;
+    background-color: lightblue;
+}
+p{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+h2{
+    background-color: lightblue;
+}
+section{
+    border: 1px solid gray;
+    padding: 15px;
+    margin: 15px;
+}
+table, th, td{
+    border: 1px solid gray;
+}
+th{
+    background-color: lightblue;
+}
+th,td{
+    padding: 8px;
+}
+label{
+    display:block;
+}
